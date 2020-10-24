@@ -1,53 +1,41 @@
 package Salary;
 
 public class Department {
-    private String NameofDepartment ;
-    private String nameofManager;
-    private String Listofemployee;
+    private String name;
+    private Manager manager;
+    private Employee[] employees;
 
     public Department(){
 
     }
 
-    public Department(String nameofDepartment, String nameofManager , String listofemployee){
-        this.NameofDepartment = nameofDepartment;
-        this.nameofManager   = nameofManager;
-        this.Listofemployee = listofemployee;
+    public Department(String name, Manager manager, Employee[] employees) {
+        this.name = name;
+        this.manager = manager;
+        this.employees = employees;
     }
 
-    public String getNameofDepartment() {
-
-        return NameofDepartment;
-
+    public String getName() {
+        return name;
     }
 
-    public void setNameofDepartment(String nameofDepartment) {
-
-        this.NameofDepartment = nameofDepartment;
-
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getNameofManager() {
-
-        return nameofManager;
-
+    public Manager getManager() {
+        return manager;
     }
 
-    public void setNameofManager(String nameofManager){
-
-        this.nameofManager = nameofManager;
-
+    public void setManager(Manager manager) {
+        this.manager = manager;
     }
 
-    public String getListofemployee() {
-
-        return Listofemployee;
-
+    public Employee[] getEmployees() {
+        return employees;
     }
 
-    public void setListofemployee(String listofemployee){
-
-        this.Listofemployee = listofemployee;
-
+    public void setEmployees(Employee[] employees) {
+        this.employees = employees;
     }
 }

@@ -2,17 +2,17 @@ package Salary;
 
 public class Company {
     private String name;
-    private String Nameofmanager;
-    private String Listofemployee;
+    private Manager manager;
+    private Employee[] employees;
 
     public Company(){
-
+        
     }
 
-    public Company(String nameofCompany, String nameofmanager, String listofemployee){
-        this.name = nameofCompany;
-        this.Nameofmanager = nameofmanager;
-        this.Listofemployee = listofemployee;
+    public Company(String name, Manager manager, Employee[] employees) {
+        this.name = name;
+        this.manager = manager;
+        this.employees = employees;
     }
 
     public String getName() {
@@ -23,19 +23,19 @@ public class Company {
         this.name = name;
     }
 
-    public String getNameofmanager() {
-        return Nameofmanager;
+    public Manager getManager() {
+        return manager;
     }
 
-    public void setNameofmanager(String nameofmanager) {
-        this.Nameofmanager = nameofmanager;
+    public void setManager(Manager manager) {
+        this.manager = manager;
     }
 
-    public String getListofemployee() {
-        return Listofemployee;
+    public Employee[] getEmployees() {
+        return employees;
     }
 
-    public void setListofemployee(String listofemployee) {
-        this.Listofemployee = listofemployee;
+    public void setEmployees(Employee[] employees) {
+        this.employees = employees;
     }
 }
