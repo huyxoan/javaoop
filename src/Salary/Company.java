@@ -1,7 +1,7 @@
 package Salary;
 
 public class Company {
-    private String NameofCompany ;
+    private String name;
     private String Nameofmanager;
     private String Listofemployee;
 
@@ -10,17 +10,17 @@ public class Company {
     }
 
     public Company(String nameofCompany, String nameofmanager, String listofemployee){
-        this.NameofCompany = nameofCompany;
+        this.name = nameofCompany;
         this.Nameofmanager = nameofmanager;
         this.Listofemployee = listofemployee;
     }
 
-    public String getNameofCompany() {
-        return NameofCompany;
+    public String getName() {
+        return name;
     }
 
-    public void setNameofCompany(String nameofCompany) {
-        this.NameofCompany = nameofCompany;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getNameofmanager() {
