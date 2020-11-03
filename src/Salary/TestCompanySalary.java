@@ -15,12 +15,7 @@ public class TestCompanySalary {
         System.out.println("Tong luong van phong la " + department.getSumSalary());
 
 
-        Employee e2 = new Employee();
-        e2.setRatio(1.2);
 
-
-        Manager m2 = new Manager();
-        m2.setRatio(1.4);
 
         TrialEmployee t2 = new TrialEmployee();
         t2.setRatio(1.6);
@@ -30,7 +25,7 @@ public class TestCompanySalary {
 
 
         Company company = new Company();
-        company.setDepartments(new Department[]{e2,m2,t2,d2});
-        System.out.println("Tong luong trong cong ty la " + company.getSumSalary());
+        company.setDepartments(new Department[]{e1,d2,m1,t2});
+        System.out.println("Tong luong trong cong ty la " + company.getallSumSalary());
     }
 }
